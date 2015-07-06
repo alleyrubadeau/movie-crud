@@ -1,0 +1,42 @@
+body {
+  background-color: grey;
+}
+
+button, input {
+  display: block;
+  padding: 5px;
+  background-color: black;
+  color: white;
+}
+
+
+table {
+  border-spacing: 0.5rem;
+  border-collapse: collapse;
+}
+th {
+  display: block;
+  float: left;
+  padding: 5px;
+  border: solid 1px;
+}
+
+td {
+  display: inline-block;
+  float: left;
+  padding: 8px;
+
+}
+
+header {
+  font: 30px;
+  font-family: fantasy;
+}
+
+#popcorn {
+  float: right;
+}
+
+#poster {
+  display: hidden;
+}

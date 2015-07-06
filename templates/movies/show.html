@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link rel="stylesheet" href="/public/style.css">
+
+</head>
+<body>
+  {{#movies }}
+  <a href = '/movies/{{_id}}/'><h2>{{name}}</h2></a>
+  <a href = '/movies/{{_id}}/'><img src ="{{poster}}"></a>
+  {{/movies}}
+</body>
+</html>

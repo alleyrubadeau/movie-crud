@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+<link rel="stylesheet" href="/public/style.css">
+</head>
+<body>
+  <header>Alley's movie ratings</header>
+  <img id="popcorn" src="http://disabilityrightsgalaxy.com/wordpress/wp-content/uploads/2012/12/Movie-Theaters.jpg" alt="" />
+
+  <h2>{{pageTitle}}</h2>
+
+  {{#movies }}
+  <table>
+    <thead>
+      <tr>
+        <section>
+          <th>Movie Name</th>
+          <th>Director</th>
+          <th>Year</th>
+          <th>My Rating!</th>
+        </section>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <section>
+          <td><a href = '/movies/{{_id}}/'>{{name}}</a></td>
+          <td>{{director}}</td>
+          <td>{{year}}</td></a>
+          <td>{{rating}}</td></a>
+<!--           <td><img src ="{{poster}}"></td>
+ -->        </section>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <form class="" action="/movies/{{_id}}/delete" method="post">
+    <input type="submit" value = "Delete">
+  </form>
+
+  <a href = "/movies/{{_id}}/edit">
+    <button type="button" name="button">Edit Movie</button>
+  </a>
+
+
+
+  {{/movies}}
+
+  <a href = '/movies/new' method='get'>
+    <button type="button" name="button">Add a new movie!</button>
+  </a>
+
+
+
+
+</body>
+</html>

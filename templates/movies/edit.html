@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link rel="stylesheet" href="/public/style.css">
+
+</head>
+<body>
+  <form action="/movies/{{_id}}/update" method="post">
+
+      <label for="name">movie label
+        <input id= "name" type="text" name="name" value={{name}}>
+      </label>
+
+      <label for="director">director
+        <input id= "director" type="text" name="director" value={{director}}>
+      </label>
+
+      <label for="year">year
+        <input id= "year" type="text" name="year" value={{year}}>
+      </label>
+
+      <label for="rating">Rating
+        <input id= "rating" type="text" name="rating" value={{rating}}>
+      </label>
+
+      <label for="poster">Poster URL
+        <input id= "poster" type="text" name="poster" value={{poster}}>
+      </label>
+
+  <input type="submit" value="update the movie">
+
+
+
+  </form>
+
+
+
+
+
+
+
+</body>
+</html>
